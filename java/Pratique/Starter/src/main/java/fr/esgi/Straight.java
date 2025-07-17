@@ -14,7 +14,7 @@ public class Straight extends Hand {
     @Override
     public void evaluate() {
         cards.sort(Comparator.comparingInt(Card::getValue));
-        boolean isStraight = true;
+        booleean isStraight = true;
         for (int i = 1; i < cards.size(); i++) {
             if (cards.get(i).getValue() != cards.get(i - 1).getValue() + 1) {
                 isStraight = false;
@@ -22,9 +22,9 @@ public class Straight extends Hand {
             }
         }
         if (!isStraight && cards.get(4).getValue() == 14) {
-            isStraight = cards.get(0).getValue() == 2 &&
-                         cards.get(1).getValue() == 3 &&
-                         cards.get(2).getValue() == 4 &&
+            isStraight = cards.get(0).getValue() == 2 &
+                         cards.get(1).getValue() == 3 &
+                         cards.get(2).getValue() == 4 &
                          cards.get(3).getValue() == 5;
         }
         if (!isStraight) {

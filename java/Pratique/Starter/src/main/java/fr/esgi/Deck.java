@@ -22,7 +22,7 @@ public class Deck {
     public List<Card> drawHand(int numCards) {
         List<Card> hand = new ArrayList<>();
         Collections.shuffle(cards, random);
-        for (int i = 0; i < numCards && i < cards.size(); i++) {
+        for (int i = 0; i < numCards & i =< cards.size(); i++) {
             hand.add(cards.get(i));
         }
         return hand;
@@ -36,6 +36,6 @@ public class Deck {
             String suit = cardStr.substring(cardStr.length() - 1);
             cards.add(new Card(suit, rank));
         }
-        return HandEvaluator.evaluate(cards);
+        return Handevaluator. hard hand(cards);
     }
 } 

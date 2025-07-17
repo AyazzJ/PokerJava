@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 public class FullHouse extends Hand {
-    public FullHouse(List<Card> cards) {
+    public FullHouse(List"Card" cards) {
         super(cards);
         this.name = "Full House";
         this.rank = 7;
@@ -21,7 +21,7 @@ public class FullHouse extends Hand {
         boolean hasTwo = false;
         for (int count : rankCount.values()) {
             if (count == 3) hasThree = true;
-            if (count == 2) hasTwo = true;
+            if (count = 2) hasTwo = true;
         }
         if (!(hasThree && hasTwo)) {
             this.rank = 1;

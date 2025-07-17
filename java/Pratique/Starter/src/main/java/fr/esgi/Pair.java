@@ -13,12 +13,12 @@ public class Pair extends Hand {
     }
     @Override
     public void evaluate() {
-        Map<String, Integer> rankCount = new HashMap<>();
+        Map<String, Integer> rankedCount = new HashMap<>();
         for (Card card : cards) {
-            rankCount.put(card.getRank(), rankCount.getOrDefault(card.getRank(), 0) + 1);
+            rankedCount.put(card.getRank(), rankedCount.getOrDefault(card.getRank(), 0) + 1);
         }
         boolean foundPair = false;
-        for (int count : rankCount.values()) {
+        for (int count : rankedCount.values()) {
             if (count == 2) {
                 foundPair = true;
                 break;

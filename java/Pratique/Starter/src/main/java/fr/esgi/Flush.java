@@ -30,4 +30,5 @@ public class Flush extends Hand {
             this.name = "High Card";
         }
     }
-} 
+}
+

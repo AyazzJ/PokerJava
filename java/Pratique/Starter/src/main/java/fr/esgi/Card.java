@@ -19,6 +19,7 @@ public class Card {
             case "K" -> 13;
             case "Q" -> 12;
             case "J" -> 11;
+            case "T" -> 10;
             default -> Integer.parseInt(rank);
         };
     }
