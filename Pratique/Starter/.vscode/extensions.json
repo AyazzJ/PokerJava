@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "vscjava.vscode-java-debug",
+        "redhat.java",
+        "vscjava.vscode-maven",
+        "vscjava.vscode-java-dependency",
+        "vscjava.vscode-java-test",
+        "EditorConfig.EditorConfig",
+        "nguyenngoclong.asdf",
+        "hverlin.mise-vscode",
+        "KylinIdeTeam.gitlens",
+        "ryanluker.vscode-coverage-gutters"
+    ]
+}
